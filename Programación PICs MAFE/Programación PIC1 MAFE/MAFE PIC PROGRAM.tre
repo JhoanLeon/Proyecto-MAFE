@@ -1,0 +1,14 @@
+읕MAFE PIC PROGRAM
+   읕main  0/494  Ram=1
+      쳐??0??
+      쳐@goto10112  0/46  Ram=0
+      쳐@delay_ms1  0/21  Ram=1
+      쳐@delay_us1  0/20  Ram=1
+      쳐@delay_ms1  0/21  Ram=1
+      쳐@delay_us1  0/20  Ram=1
+      쳐@delay_ms1  0/21  Ram=1
+      쳐@delay_us1  0/20  Ram=1
+      쳐@delay_ms1  0/21  Ram=1
+      쳐@delay_ms1  0/21  Ram=1
+      쳐@delay_ms1  0/21  Ram=1
+      읕@delay_ms1  0/21  Ram=1

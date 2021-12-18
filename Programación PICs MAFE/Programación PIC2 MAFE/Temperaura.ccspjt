@@ -1,0 +1,32 @@
+[PROJECT]
+Target=Temperaura.hex
+Development_Mode=
+Processor_Text=PIC16F877A
+ToolSuite=CCS
+Processor=0x877A
+CCSVersion=5.007
+Compiler=PCM
+[D:\SENA\Integracion con la Media\Microcontroladores\CCS\Sensor de Temperatura\Temperaura]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+[mru-list]
+1=Temperaura.c
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+[Opened Files]
+1=Temperaura.c
+2=
+3=
+[Target Data]
+FileList=Temperaura.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[Temperaura.c]
+Type=4
+[Units]
+Count=1
+1=Temperaura (main)

@@ -1,0 +1,157 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004     @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+008     lcdlat
+008     lcd
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020-023 Temperatura
+024     @TRIS_C
+025     lcd_init.i
+025-028 @FLT.P1
+025-026 @ITOF.P2
+025-028 @PRINTF_L32D_93FPFPF.P3
+025-028 @ADDFF.P4
+025     MAIN.@SCRATCH1
+025     @PSTRINGC7_93.@SCRATCH1
+026     lcd_init.@SCRATCH1
+026     MAIN.@SCRATCH2
+026     @PSTRINGC7_93.@SCRATCH2
+027     @PSTRINGC7_93.@SCRATCH3
+029     @PRINTF_L32D_93FPFPF.P1
+029-02C @FLT.P2
+029-02C @ADDFF.P3
+02A     @PRINTF_L32D_93FPFPF.@SCRATCH1
+02B     @PRINTF_L32D_93FPFPF.@SCRATCH2
+02C     @PRINTF_L32D_93FPFPF.@SCRATCH3
+02D     @ADDFF.@SCRATCH1
+02D     @PRINTF_L32D_93FPFPF.@SCRATCH4
+02D     @FLT.@SCRATCH1
+02E     @ADDFF.@SCRATCH2
+02E     @PRINTF_L32D_93FPFPF.@SCRATCH5
+02E     @FLT.@SCRATCH2
+02F     @ADDFF.@SCRATCH3
+02F     @PRINTF_L32D_93FPFPF.@SCRATCH6
+030     @ADDFF.@SCRATCH4
+030     @PRINTF_L32D_93FPFPF.@SCRATCH7
+031     @ADDFF.@SCRATCH5
+031     @PRINTF_L32D_93FPFPF.@SCRATCH8
+032-035 @FTOSD.P1
+032-035 @MULFF.P2
+032     lcd_putc.c
+032-035 @DIV3232.P1
+032     @ADDFF.@SCRATCH6
+033     @delay_ms1.P1
+033     lcd_gotoxy.x
+033     @ADDFF.@SCRATCH7
+034     lcd_gotoxy.y
+034     @ADDFF.@SCRATCH8
+035     lcd_gotoxy.address
+036-039 @MULFF.P1
+036-039 @DIV3232.P2
+036     lcd_gotoxy.@SCRATCH1
+036     @FTOSD.@SCRATCH1
+037     lcd_send_byte.address
+038     lcd_send_byte.n
+039     lcd_read_byte.low
+039     lcd_send_byte.@SCRATCH1
+03A     lcd_send_nibble.n
+03A     lcd_read_byte.high
+03A     @MULFF.@SCRATCH1
+03A     @DIV3232.@SCRATCH1
+03B     lcd_read_byte.@SCRATCH1
+03B     @MULFF.@SCRATCH2
+03B     @DIV3232.@SCRATCH2
+03C     @MULFF.@SCRATCH3
+03C     @DIV3232.@SCRATCH3
+03D     @MULFF.@SCRATCH4
+03D     @DIV3232.@SCRATCH4
+03E     @MULFF.@SCRATCH5
+03E     @DIV3232.@SCRATCH5
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+088     lcdtris
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+007C  @delay_ms1
+0004  LCD_INIT_STRING
+00A9  lcd_read_byte
+009D  lcd_read_nibble
+0091  lcd_send_nibble
+00A3  lcd_send_byte
+00E3  lcd_init
+0118  lcd_gotoxy
+012A  lcd_putc
+0800  MAIN
+000C  @const103
+0157  @PSTRINGC7_93
+0013  @const105
+0019  @const106
+019D  @ITOF
+01BC  @ADDFF
+0362  @MULFF
+03E8  @FTOSD
+02FF  @DIV3232
+034E  @PRINTF_L32D_93FPFPF
+0020  @const124
+04A3  @FLT
+0027  @const128
+0030  @const129
+0039  @const130
+0042  @const131
+0049  @const132
+004E  @const133
+0053  @const134
+0058  @const135
+0061  @const136
+0066  @const137
+006C  @const138
+0071  @const139
+0077  @const140
+0800  @cinit
+
+
+User Memory space: 
+
+User Memory space: 
+
+Project Directory:
+    C:\Users\FAMILIA-LEON\Desktop\MAFE PIC\Sensor de Temperatura\
+
+Project Files:
+    Temperaura.c
+    E:\Jhoan Esteban León\Programas\pic c\PICC\devices\16f877a.h
+    E:\Jhoan Esteban León\Programas\pic c\PICC\drivers\lcd.c
+
+Units:
+    C:\Users\FAMILIA-LEON\Desktop\MAFE PIC\Sensor de Temperatura\Temperaura (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      Temperaura.err
+    Ext Symbols: Temperaura.esym
+    INHX8:       Temperaura.hex
+    Symbols:     Temperaura.sym
+    List:        Temperaura.lst
+    Debug/COFF:  Temperaura.cof
+    Project:     Temperaura.PJT
+    Call Tree:   Temperaura.tre
+    Statistics:  Temperaura.sta

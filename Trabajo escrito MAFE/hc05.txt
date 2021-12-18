@@ -1,0 +1,13 @@
+Bluetooth hc05
+
+clase 3: 100 mW - 100 M 
+    clase 2: 2.5 mW - 5-10 M
+Clase 1: 1 mW - 1 M
+
+Frecuencia banda 2.4 Ghz
+
+Bluetooth es un protocolo de comunicaciones, que utiliza señales de radio frecuencia, 
+en una banda de 2.4 Ghz, que tuvo como propósito principal comunicar teléfonos moviles con ordenadores, 
+son dispositivos de bajo consumo y de corto alcance.
+
+Nombre proviene del rey Danés Harold Blathan porque logró unificar diferentes tribus y convertirlas al cristianismo 
